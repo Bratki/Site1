@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(:version => 20121120190316) do
   create_table "fireplaces", :force => true do |t|
     t.text     "description"
     t.text     "images"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

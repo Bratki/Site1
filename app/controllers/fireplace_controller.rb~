@@ -1,0 +1,8 @@
+class FireplaceController < ApplicationController
+
+def index
+end
+
+
+
+end
