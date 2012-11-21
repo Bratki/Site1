@@ -52,12 +52,19 @@ $("a.video").fancybox({"frameWidth":520,"frameHeight":400});
 $("a.content").fancybox({"frameWidth":600,"frameHeight":300}); 
 });
 </script>
-
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".bodddy").click(function () {
+  $(".bodddy").animate({opacity:0},1000);
+  });
+});
+</script>
 
 </head>
 
-<body>
+<body class="boddy">
 <!-- #wrapper: centers the content and sets the width -->
+
 <div id="wrapper">
   <!-- #content: applies the white, dropshadow background -->
   <div id="content">
@@ -81,17 +88,19 @@ $("a.content").fancybox({"frameWidth":600,"frameHeight":300});
     <!-- #page: holds all page content, as well as footer -->
     <div id="page">
     <% @fireplaces.each do |fire| %>
-    <p class="italic big стиль7 стиль8">
+    <hr>
+    <div style="height:330px">
+    <a class="first" href="<%= fire.images[:full] %>"><img src="<%= fire.images[:small] %>" border="3" align="<%= ((fire.id % 2)==1)?"right":"left"%>"></a>
+    <p class="italic big стиль7 стиль8" align="center">
     <%=fire.description %>
-  </p>
-<a class="first" href="img/full/008_cropped.jpg"><img src="img/final_crop_2/kam.jpg" alt="" width="193" height="257" border="3" align="<%= (fire.id % 2)?"right":"left"%>"></a>
+    </p>
+    </div>
     <% end %>
     </div>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
   </div>
 </div>
-
 </body>
 </html></textarea></form>
 </title></comment></a>

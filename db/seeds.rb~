@@ -6,3 +6,4 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Fireplace.create([{:description => "Hello", :images =>{:full=> "img/full/100_5053_cropped.jpg",:small=>"img/final_crop_2/5053.jpg"}}])
+Fireplace.create([{:description => "Hello", :images =>{:full=> "img/full/100_5053_cropped.jpg",:small=>"img/final_crop_2/5053.jpg"}}])Fireplace.create([{:description => "Hello", :images =>{:full=> "img/full/100_5053_cropped.jpg",:small=>"img/final_crop_2/5053.jpg"}}])Fireplace.create([{:description => "Hello", :images =>{:full=> "img/full/100_5053_cropped.jpg",:small=>"img/final_crop_2/5053.jpg"}}])

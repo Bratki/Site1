@@ -15,15 +15,22 @@ html {
   height: 100%;
 }
 
-body {
+.boddy {
   height: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
   font: 400 0.8em georgia, serif;
   line-height: 180%;
-  background: url(../img/bg/body.jpg) repeat top left fixed;
   color: #6D6864;
+    background: url(../img/bg/body.jpg) repeat top left;
+    position:relative;
+}
+.bodddy {
+  height: 100%;
+
+    background: url(../img/bg/body2.jpg) repeat top left;
+    position:absolute;
 }
 
 h1, h2, h3, h4, h5, h6, p, dl {
@@ -336,13 +343,18 @@ ul {
           background-color: #FFF;
         }
         &:hover {
-          color: #2E5F0F;
+          color: #9e4157;
           background: url(../img/bg/menu.gif) repeat-x bottom left;
         }
         &.here {
-          color: #512103;
+          color: #12235e;
           background: url(../img/bg/menu.gif) repeat-x bottom left;
         }
+        -webkit-transition: All 0.5s ease;
+        -moz-transition: All 0.5s ease;
+        -o-transition: All 0.5s ease;
+        -ms-transition: All 0.5s ease;
+        transition: All 0.5s ease;
       }
     }
   }
@@ -533,7 +545,6 @@ ul.bigLinks {
     border-bottom: 1px solid #8be7dd;
   }
 }
-
 .highlight {
   padding: 1px 2px;
   background: #D9F5EC;
