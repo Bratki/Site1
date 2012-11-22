@@ -9,6 +9,58 @@
  **************************************************************/
 
 /* Forces horizontal scrollbar on in Mozilla */
+html, body {
+width: 100%;
+height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main1 {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+
+}
+
+a {
+  border: 0;
+}
+p {
+  margin: 1em 0 0.8em;
+}
+.clear {
+  clear: both;
+}
+#main .outer {
+  background: transparent url('../img/vines-mid.png') 70% 0 repeat-x;
+  width:100%;
+  align:left;
+  position: fixed;
+    left: 0; bottom: 0;
+
+}
+#main .inner {
+  background: transparent url('../img/vines-front.png') 300% 0 repeat-x;
+position: relative;
+width:100%;
+align:left;
+
+}
+#main .content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+
+
+
+
 
 html {
   margin-bottom: 1px;
@@ -274,6 +326,7 @@ a {
 }
 
 #content {
+  position: relative;
   float: left;
   width: 900px;
   height: 100%;
@@ -290,8 +343,8 @@ a {
  **************************************************************/
 
 #header {
-  padding: 60px 0 2em 49px;
-  background: url(../img/bg/bgfire.gif) no-repeat top center;
+  padding: 0px 0 2em 10px;
+  
 }
 
 /* Forces IE to set the hasLayout flag and show the header at the height of its contents \*/
@@ -383,17 +436,14 @@ ul {
   clear: both;
   width: 802px !important;
   width: 100%;
-  padding: 2em 49px;
+  padding: 25px;
 }
 
 /**************************************************************
    .footer: Site footer
  **************************************************************/
 
-.footer {
-  padding-top: 3em;
-  font-size: 0.85em;
-}
+
 
 /**************************************************************
    .bigLinks: Large, clickable links
