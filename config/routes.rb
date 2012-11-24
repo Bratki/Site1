@@ -1,9 +1,11 @@
 Site1::Application.routes.draw do
-  resources :fireplaces
-  root :to=>"fireplace/index"
+  get "comment/new"
+
   get "fireplace/show"
+  match "comment/new/:id" =>"comment#new"
   match "contact" => "contact#index"
   match "fireplace" => "fireplace#index"
+  match "fireplace/:id" => "fireplace#show"
 
   
   # The priority is based upon order of creation:

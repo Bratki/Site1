@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+      <title>Камины</title>
+</head>
+<body>
+	<% fire=@fireplace %>
+         <hr>
+        <div style="height:330px">
+          <p class="italic big стиль7 стиль8" align="center">
+            <%=fire.description %>
+          </p>
+        <% @comments.each do |com| %>
+        	<%=com.name%>
+            </br>
+            </br>
+            <%=com.content%>
+        <% end %>
+        NEW COMMENTARY
+        <%=form_tag "/comment/new/#{fire.id}" do %>
+
+  		<%= label :comment, :name, 'name'%>
+  		<%= text_field :comment, 'name'%>
+
+  		<%= label :comment, :content, 'Content'%>
+  		<%= text_field :comment, 'content'%>
+  		<%= submit_tag 'COMMEND'%>
+  		<% end %>
+        </div>
+</body>
