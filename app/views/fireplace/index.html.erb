@@ -112,9 +112,10 @@ $(document).ready(function(){
     <% @fireplaces.each do |fire| %>
     <hr>
     <div style="height:330px">
-    <a class="first" href="<%= fire.images[:full] %>"><img src="<%= fire.images[:small] %>" border="3" align="<%= ((fire.id % 2)==1)?"right":"left"%>"></a>
+    <a class="first" href="<%= fire.images[:full] %>"><img src="<%= fire.images[:small] %>" border="3" align="<%= ((fire.id % 2)==1)? "right":"left"%>"></a>
     <p class="italic big стиль7 стиль8" align="center">
     <%=fire.description %>
+    <%=link_to fireplace_path(fire.id)%>
     </p>
     </div>
     <% end %>
