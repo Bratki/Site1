@@ -5,6 +5,6 @@ class CommentController < ApplicationController
 	@comment.save
 	
 
-	redirect_to "/fireplace/#{params[:id]}"
+	redirect_to "fireplace/#{params[:id]}"
   end
 end

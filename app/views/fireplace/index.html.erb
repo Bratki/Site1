@@ -100,7 +100,7 @@
           <a class="first" href="<%= fire.images[:full] %>"><img src="<%= fire.images[:small] %>" border="3" align="<%= ((fire.id % 2)==1)? "right":"left"%>"></a>
           <p class="italic big стиль7 стиль8" align="center">
             <%=fire.description %>
-            <%=link_to "Details", "/fireplace/#{fire.id}" %>
+            <%=link_to "Details", "fireplace/#{fire.id}" %>
           </p>
         </div>
       <% end %>
