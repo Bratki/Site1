@@ -75,7 +75,7 @@
       </script>
 </head>
 
-<body class="boddy">
+<body>
   <div id="wrapper">
     <div id="content">
       <div id="header">
@@ -93,17 +93,22 @@
     <div id="main1">
      
       <% fire=@fireplace %>
-         <hr>
+      
         <div style="height:330px">
+
           <p class="italic big стиль7 стиль8" align="left">
             <%=fire.description %>
           </p>
+         <img src="../<%= fire.images[:full] %>" style="height:330px">
         <% @comments.each do |com| %>
-        	<%=com.name%>
-            </br>
-            </br>
-            <%=com.content%>
+        	 <div id="comment:<%= fire.id %>;<%= com.id %>" class="comment">
+              <hr>
+              <p class="italic big" style="font-weight: bold; color: rgb(67,97,103)"><%=com.name%>:</p>
+          
+              <p class="italic" style="color: rgb(69,94,146)"><%=com.content%></p>
+           </div>
         <% end %>
+        <hr>
         <p class="italic big стиль7 стиль8" align="right">
         Добавить новый комментарий
         </p>
