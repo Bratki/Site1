@@ -36,18 +36,6 @@
      $('body').parallax({
        'elements': [
          {
-           'selector': 'body',
-           'properties': {
-             'x': {
-               'background-position-x': {
-                 'initial': 0,
-                 'multiplier': 0.01,
-                 'invert': true
-               }
-             }
-           }
-         },
-         {
            'selector': 'div.outer',
            'properties': {
              'x': {
@@ -94,14 +82,14 @@
      
       <% fire=@fireplace %>
       
-        <div style="height:330px">
+        
 
           <p class="italic big стиль7 стиль8" align="left">
             <%=fire.description %>
           </p>
          <img src="../<%= fire.images[:full] %>" style="height:330px">
         <% @comments.each do |com| %>
-        	 <div id="comment:<%= fire.id %>;<%= com.id %>" class="comment">
+        	 <div id="comment:<%= fire.id %>;<%= com.id %>" class="comment" style="height:auto; word-wrap: break-word">
               <hr>
               <p class="italic big" style="font-weight: bold; color: rgb(67,97,103)"><%=com.name%>:</p>
           
@@ -125,17 +113,17 @@
   		<%= submit_tag 'Оставить комментарий'%>
   		<% end %>
     </p>
-        </div>
-     
+       
+     <br><br>
   <div id="main" style="margin-top:170x">
     <div class="outer">
       <div class="inner">
-        <br><br><br><br>      
+        <br><br><br>      
       </div>
     </div>
   </div>
 </div>
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>   
   
 </div>
 
